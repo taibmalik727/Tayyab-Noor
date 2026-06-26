@@ -158,7 +158,9 @@ no.style.top=y+"px";
 
 document.getElementById("yes").onclick=function(){
 
-document.body.innerHTML=`
+document.body.innerHTML=`<audio id="bgMusic" autoplay loop>
+    <source src="music.mp3.mp3" type="audio/mpeg">
+</audio>
 
 <div style="
 height:100vh;
@@ -195,7 +197,7 @@ I Love You Noor ❤️
 </div>
 
 `;
-
+document.getElementById("bgMusic").play();
 }
 
 function createHeart(){
